@@ -1,0 +1,28 @@
+[문제] 
+  별(*) 문자를 이용해 높이가 n인 삼각형을 출력하시오.
+  단, n은 100이하인 자연수입니다.
+
+
+[예시]
+  입력) 3
+  출력) *
+        **
+        ***
+
+
+[코드]
+import java.util.Scanner;
+
+class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+
+        for(int i=0; i<a; i++){
+            for(int j=0; j<=i; j++){
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+    }
+    
